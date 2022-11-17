@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        /*
+        for (var i =1 ; i <=100; i++){
+            if (i>=10) {
+                console.log(i);
+            }
+        }
+
+        for (var i =10 ; i <=100 ; i++){
+            if (i%5==0) {
+                console.log(i)
+            }
+        }*/
+
+        var k_usernames ="Ali";
+        var k_password="12345";
+        var username=prompt("Username enter please :");
+        var password=prompt("Password enter please :");
+        var loggedin=false;
+
+        while(!loggedin) {
+
+        if ((k_usernames==username) && (k_password==password)) {
+            console.log("Giris basarili");
+            loggedin=true;
+           
+        }else{
+            console.log("Vous devez encore l'essayer votre password");
+        }
+    }
+    </script>
+</body>
+</html>

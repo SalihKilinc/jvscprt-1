@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var marka=["opel" , "toyota" , "mazda" , "Tesla" , "Audi"];
+        var model=new Array("Corsa" , "Yaris" ,"C-5" ,"Gen");
+        var years=["2016" , "2012" , "2016" , "2014"];
+        console.log(marka + model + years);
+*/
+
+var opel={
+    marka :"opel",
+    model : "Insignia" ,
+    yil : "2016",
+    renk : "beyaz" ,
+    automatic : true
+
+};
+console.log(opel);
+console.log(opel.marka);
+console.log(opel.renk);
+
+var toyota = new Object();
+toyota.marka="Toyota";
+toyota.model="Auris";
+toyota.yil="2019";
+toyota.renk ="Mavi";
+toyota.automatic="true";
+console.log(toyota.model);
+
+toyota.model="Avensis";  // modelini degistirdik
+console.log(toyota);
+
+var arabalar =[                 // arabalar diye bir dongu olusturup asagidaki for ile consolda yazdik
+   
+{
+    marka :"opel",
+    model : "Insignia" ,
+    yil : "2016",
+    renk : "beyaz" ,
+    automatic : true
+}
+,
+{
+    marka :"Mazda",
+    model : "C-7" ,
+    yil : "2016",
+    renk : "beyaz" ,
+    automatic : true
+}
+
+]
+console.log(arabalar);
+
+for(i=0; i<arabalar.length; i++){
+    console.log(arabalar[i] . marka);
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html> 

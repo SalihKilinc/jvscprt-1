@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class="card">
+                    <img classs="card-img-top" src="" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <a href="#" class="btn btn-primary">Click me</a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+var models = [
+    {
+        name: "BMW" ,
+        image: "img/bmw-320.png",
+        link:"http://www.arabalar.com.tr/bmw/4-serisi/2018/418d-2-0 gran-coupe"
+        
+    },
+    { name: "Volvo" ,
+        image: "img/volvo-s90.png",
+        link:"http://www.arabalar.com.tr/volvo/s-90 serisi/2018/418d-2-0"
+
+    } ,
+    {
+        name: "BMW" ,
+        image: "img/ford-focus.png",
+        link:"http://www.arabalar.com.tr/ford/focus-serisi/2018/418d-2-0 gran-coupe"
+    }
+];
+
+setInterval(function (){
+
+    var index = Math.floor(Math.random()* models.length);
+
+var img = document.querySelector(".card-img-top");
+var title = document.querySelector(".card-title");
+var a =document.querySelector("a");
+
+img.setAttribute("src", models[index].image);
+a.setAttribute("href", models[index].link );
+title.textContent = models[index].name;
+},2000)
+
+console.log(models);
+
+
+    </script>
+</body>
+
+</html>

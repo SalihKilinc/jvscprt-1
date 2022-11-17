@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marka=["opel" , "toyota" , "mazda" , "Tesla" , "Audi"];
+        var model=new Array("Corsa" , "Yaris" ,"C-5" ,"Gen")
+        console.log(marka [2]);   // array icine alip hepsini ayni anda yazdik sadece bir model scmek istersen log icinde array ile yaz
+        console.log(model [1]);
+
+        model[1]="Prius";
+        console.log(model);    // ustte tanimli yarisi degistirdik
+
+
+        // onemli
+
+        var octavia=["Skoda" , "Octavia" , 55 , true];
+        octavia.push("blue");  // sonuna ekleme yaptik push metodu ile
+        octavia.unshift("Hb"); // en basina ekleme yaptik bu metodla
+        octavia.pop();    // bu metodla verdigimiz son degeri yani rengi sildik
+        octavia.shift();   // bu metodla en basina ekledigimiz Hb yi sildik
+
+        console.log(octavia);
+      
+for(i=0; i<marka.length; i++){
+    console.log(marka[i]);
+}
+
+/*if (marka.indexOf("Tesla")!==-1) */ 
+if (marka.indexOf("Mercedes")!==-1)  {
+    //console.log(marka[marka.indexOf("Tesla")]);// indexof en son -1 demek kodda ve istedigimiz markayi boyle secebiliriz
+
+    console.log("bulundu");
+}else{
+    console.log("Please try again");
+}
+
+    </script>
+</body>
+</html>

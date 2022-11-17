@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  // sayi tekmi cift mi
+        /*
+        function tekCift (a){
+            if (a%2==0) {
+return true;
+                
+            }else{
+                return false;
+            }
+        }
+        var a =tekCift(12);
+        console.log(a); */ 
+
+
+
+        //Faktoriyel hesabi
+/*
+        function faktoriyel (sayi){
+            var sonuc=1;
+            for(var i=2 ; i<=sayi ; i++){
+                sonuc*=i;
+            }
+            return sonuc;
+        }
+        console.log(faktoriyel (4)); */
+
+
+        // Kendisine gonderilen bir dizini elemanlarini ekrana yazdiran fonksiyon yaz
+
+        var modeller =["Tesla" , "Mazda" , "Seat"];
+
+        function ecrire (marka){
+            marka.forEach(function(element ) {
+                console.log(element);
+            });
+        }
+        ecrire(modeller);
+
+
+
+
+    </script>
+</body>
+</html>

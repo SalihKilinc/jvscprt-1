@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        function topla(x,y){    // toplama islemi yaptik
+            return x+y;
+
+        }
+        var sonuc=topla(5,10);
+        console.log(sonuc);
+        console.log(topla(40,80));*/
+var now=2022;
+function yashesap(yas){
+return now-yas;
+
+}
+var baklava =yashesap(2000);
+var tarcin = yashesap(1999);
+console.log(tarcin);
+console.log(baklava);
+
+
+// emeklilik yas hesapla
+
+function emekliyashesap(ad, yas){
+    var c_yas = yashesap(yas);
+    var emeklilik = 65 - c_yas;
+
+if (emeklilik>0) {
+    console.log(ad + " " + emeklilik + " " + "yil sonra emekli olabilir");
+}else{
+    console.log(ad + "zaten  " + (emeklilik*-1) + " yil once emekli olmus");  // emeklilik * -1 yaparak eksi 3 yil once emekli olmus ibaresini kaldirdik
+
+}
+
+   
+}
+emekliyashesap("OIKEN " , 1986);  // burda verilen degerlr ise emekli olanin yasini cikarmak icindir
+emekliyashesap("Asus " , 1955);
+
+
+    </script>
+</body>
+</html>

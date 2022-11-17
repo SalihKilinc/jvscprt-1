@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var personel=
+    {
+ad : "Kenan", soyad: "Kilinc", cinsiyet: "Erkek", num: "5556647899" , job : "Police" ,
+dil:["Fransizca","ingilizce "," ispanyolca"] , hobiler:["Nager", "sky"] 
+
+
+
+    }
+
+console.log("Sayin " + personel.ad + " " + personel.soyad + " " +  personel.cinsiyet  +" "+  personel.num + " "+ personel.dil + " " + "dillerini konusabilmektedir");
+console.log(personel.dil.lenght);
+
+personel.hobiler.forEach(function(hobi)  {  // foreach ile hobileri hobi degeri vererek alt alta yazdik
+    console.log(hobi);
+});
+
+var personel2=[
+    {
+ad : "Kenan", soyad: "Kilinc", cinsiyet: "Erkek", num: "5556647899" , job : "Police" ,
+dil : "Fransizca, ingilizce , ispanyolca" , hobiler: "Nager, sky"
+
+    }
+,
+    
+    {
+    ad : "Semra", soyad: "Tarcin", cinsiyet: "Kiz", num: "5556647899" , job : "Police" ,
+lang : "Fransizca, ingilizce , ispanyolca" , hobiler: "Nager, sky"
+
+    },
+    {
+    ad : "Selma", soyad: "Tarcin", cinsiyet: "kiz", num: "5556647899" , job : "Police" ,
+lang : "Fransizca, ingilizce , ispanyolca" , hobiler: "Nager, sky"
+}
+
+];
+
+personel2.forEach(function(personel1)  {
+    console.log("***************");
+    console.log(personel1);
+});
+
+
+    </script>
+</body>
+</html>

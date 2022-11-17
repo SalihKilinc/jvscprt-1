@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+    .box{
+        width: 140px;
+        height: 130px;
+        margin: 10px;
+        float: left;
+
+    }
+    #blue{
+        background-color: blue;
+    }
+    #red{
+        background-color: red;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+</style>
+
+</head>
+<body>
+    <div id="blue" class="box"></div>
+    <div id="red" class="box"></div>
+    <div id="yellow" class="box"></div>
+
+    <script>
+        // Kutulara tiklaninca display none yaptik
+       /* var blue =document.querySelector("#blue");
+        blue.addEventListener("click" , function(){
+            this.style.display="none";
+        })
+
+        var red =document.querySelector("#red");
+        red.addEventListener("click" , function(){
+            this.style.display="none";
+        })
+
+        var yellow =document.querySelector("#yellow");
+        yellow.addEventListener("click" , function(){
+            this.style.display="none";
+        })*/
+
+
+         // Kutulara tiklaninca display none yaptik  2. yol ikiside ayni islemi yapar
+var kutular = document.querySelectorAll(".box");
+
+kutular.forEach(function(box){
+   box.addEventListener("click" , function(){
+    box.style.display="none";
+   }) 
+})
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* 
+       1: tum modelleri yazdirin
+         var now=2022;   
+       var marka=["toyota" , "Mazda" , "Mercedes" , "Opel"];
+       var years=["2016" , "2012" , "2016" , "2014"];
+            
+        for(i=0; i<marka.length; i++){
+        console.log(marka[i]);
+       }
+
+
+       2* asagidaki goruntuyu consola yansit
+
+       
+       var now=2022;   
+       var marka=prompt("Lutfen arac markasini giriniz :")
+      
+       var years=Number(prompt("Lutfen aracin yasini giriniz :"))
+        var sonuc=now-years;
+      console.log( "Your car " + sonuc + " Models " + marka );
+
+
+       // toyota 2015 model ve 6 yasinda bir aractir
+       // Mazda 2012 model bir arac ve 10 yasindadir
+       // mercedes 2016 model bir arac ve 6 yasindadir
+       // opel 2014 ve 8 yasinda bir aractir
+
+       3* models end years arays with eleman eklenebilsin
+
+       */ 
+       var now=2022;   
+       var models=["toyota" , "Mazda" , "Mercedes" , "Opel"];
+       var years=["2016" , "2012" , "2016" , "2014"];
+       var model=prompt("Please entre model :");
+       var year=prompt("Please entre your car to years :");
+       
+       models.push(model);
+       years.push(year);
+
+       for(var i=0; i<models.length; i++){
+        console.log(models[i] + " " + years [i] + "model ve" + (now-years[i] )+ "yasinda bir aractir");
+       }
+
+    </script>
+</body>
+</html>
